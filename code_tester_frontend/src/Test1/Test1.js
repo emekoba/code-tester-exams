@@ -1,7 +1,17 @@
-import React from "react";
+import React, { PureComponent } from "react";
 
-function Test1() {
-	return <div>this is the first test</div>;
+class Test1 extends PureComponent {
+	constructor(props) {
+		super(props);
+
+		this.state = {};
+	}
+
+	componentWillMount() {}
+
+	render() {
+		return <div></div>;
+	}
 }
 
 export default Test1;
