@@ -32,6 +32,15 @@ export default Test1;
 
 //** Error documentation */
 
-//? what was componentWillMount intended for?
-//? why is it deprecated?
-//? what other lifecycle hook(s) can be used to achieve the same effect?
+//? what was componentWillMount intended for? 
+/*
+Once the componentWillMount gets initiated, the previous message value will be overridden with the updated message value. 
+Therefore message will now be 'first message', but keep in mind this happens once in a lifetime of a component.
+*/
+
+//? why is it deprecated? 
+//It means the function can be replaced by newer functions
+
+//? what other lifecycle hook(s) can be used to achieve the same effect? 
+//ComponentDidMount
+
